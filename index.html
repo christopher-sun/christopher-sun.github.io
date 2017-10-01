@@ -14,494 +14,653 @@
     </body> --> -->
 
     <!doctype html>
-    <html>
-    <head>
+    <html><head>
+        <meta charset="utf-8">
+        <title>BLOCKS - Bootstrap Dashboard Theme</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="Carlos Alvarez - Alvarez.is">
 
-      <!-- General Head Content -->
-      <!-- meta tags -->
-    <meta charset="utf-8" />
-    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1' /><![endif]-->
+        <!-- Le styles -->
+        <link href="assets/css/bootstrap.css" rel="stylesheet">
+        <link href="assets/css/main.css" rel="stylesheet">
+        <link href="assets/css/font-style.css" rel="stylesheet">
+        <link href="assets/css/flexslider.css" rel="stylesheet">
 
-    <meta name="description" content="Designed to be the perfect starting point for any dashboard or admin site. Charts, graphs, sortable tables, and more than a dozen other new components included." />
+    	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="google-site-verification" content="4--Yv8-XVyrl4hAM2ceeBXt8H8iiI_3Ms3vDSIV5xN0" />
+        <style type="text/css">
+          body {
+            padding-top: 60px;
+          }
+        </style>
 
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-    <!-- title tag-->
-    <title>
-      Dashboard &ndash; Bootstrap Themes
-    </title>
+        <!-- Le fav and touch icons -->
+        <link rel="shortcut icon" href="assets/ico/favicon.ico">
+        <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+        <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
 
-    <!-- search engine -->
-    <link rel="canonical" href="https://themes.getbootstrap.com/products/dashboard" />
+      	<!-- Google Fonts call. Font Used Open Sans & Raleway -->
+    	<link href="http://fonts.googleapis.com/css?family=Raleway:400,300" rel="stylesheet" type="text/css">
+      	<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
 
-    <!-- open graph -->
-
-      <meta property="og:type" content="product" />
-      <meta property="og:title" content="Dashboard" />
-
-      <meta property="og:image" content="http://cdn.shopify.com/s/files/1/0691/5403/products/dashboard-screenshot_grande.jpg?v=1439064271" />
-      <meta property="og:image:secure_url" content="https://cdn.shopify.com/s/files/1/0691/5403/products/dashboard-screenshot_grande.jpg?v=1439064271" />
-
-      <meta property="og:price:amount" content="99.00" />
-      <meta property="og:price:currency" content="USD" />
-
-
-
-    <meta property="og:description" content="Designed to be the perfect starting point for any dashboard or admin site. Charts, graphs, sortable tables, and more than a dozen other new components included." />
-
-    <meta property="og:url" content="https://themes.getbootstrap.com/products/dashboard" />
-    <meta property="og:site_name" content="Bootstrap Themes" />
-
-
-
-      <meta name="twitter:card" content="product" />
-      <meta name="twitter:title" content="Dashboard" />
-      <meta name="twitter:description" content="Designed to be the perfect starting point for any dashboard or admin site. Charts, graphs, sortable tables, and more than a dozen other new components included." />
-      <meta name="twitter:image" content="http://cdn.shopify.com/s/files/1/0691/5403/products/dashboard-screenshot_large.jpg?v=1439064271" />
-      <meta name="twitter:label1" content="Price" />
-      <meta name="twitter:data1" content="From $99.00 USD" />
-
-      <meta name="twitter:label2" content="Brand" />
-      <meta name="twitter:data2" content="Bootstrap Themes" />
-
-
-
-    <!-- styles -->
-    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-    <link href="//cdn.shopify.com/s/files/1/0691/5403/t/141/assets/style.scss.css?16007593649882510692" rel="stylesheet" type="text/css" media="all" />
-
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
-    <![endif]-->
-
-
-      <!-- External content for head -->
-      <meta name="shopify-checkout-api-token" content="38a7cd2c599fe0bd32c013997b89b252">
-    <link rel="alternate" type="application/json+oembed" href="https://themes.getbootstrap.com/products/dashboard.oembed">
     <script type="text/javascript">
-    //<![CDATA[
-          var Shopify = Shopify || {};
-          Shopify.shop = "strapping-io.myshopify.com";
-          Shopify.theme = {"name":"v0.0.2","id":176420240,"theme_store_id":null,"role":"main"};
-          Shopify.theme.handle = "null";
-          Shopify.theme.style = {"id":null,"handle":null};
+    $(document).ready(function () {
 
-    //]]>
-    </script><script type="text/javascript">
-    //<![CDATA[
-        (function() {
-          function asyncLoad() {
-            var urls = ["https:\/\/dfjp7gc2z6ooe.cloudfront.net\/assets\/sky_pilot.js?shop=strapping-io.myshopify.com","https:\/\/cdn.shopify.com\/s\/files\/1\/0691\/5403\/t\/128\/assets\/hitsanalytics.js?3497404006201282883\u0026shop=strapping-io.myshopify.com"];
-            for (var i = 0; i < urls.length; i++) {
-              var s = document.createElement('script');
-              s.type = 'text/javascript';
-              s.async = true;
-              s.src = urls[i];
-              var x = document.getElementsByTagName('script')[0];
-              x.parentNode.insertBefore(s, x);
+        $("#btn-blog-next").click(function () {
+          $('#blogCarousel').carousel('next')
+        });
+         $("#btn-blog-prev").click(function () {
+          $('#blogCarousel').carousel('prev')
+        });
+
+         $("#btn-client-next").click(function () {
+          $('#clientCarousel').carousel('next')
+        });
+         $("#btn-client-prev").click(function () {
+          $('#clientCarousel').carousel('prev')
+        });
+
+    });
+
+     $(window).load(function(){
+
+        $('.flexslider').flexslider({
+            animation: "slide",
+            slideshow: true,
+            start: function(slider){
+              $('body').removeClass('loading');
             }
-          };
-          if(window.attachEvent) {
-            window.attachEvent('onload', asyncLoad);
-          } else {
-            window.addEventListener('load', asyncLoad, false);
-          }
-        })();
+        });
+    });
 
-    //]]>
-    </script><script id="__st">
-    //<![CDATA[
-    var __st={"a":6915403,"offset":-25200,"reqid":"84f2ccd4-8026-48fd-8158-a5526aef9ca6","pageurl":"themes.getbootstrap.com\/products\/dashboard","u":"007bf2f1793f","p":"product","rtyp":"product","rid":380620504};
-    //]]>
-    </script><script src="https://cdn.shopify.com/s/javascripts/shopify_stats.js?v=6" type="text/javascript" async="async"></script>
-    <meta id="shopify-digital-wallet" name="shopify-digital-wallet" content="/6915403/digital_wallets/dialog" />
-    <script src="//cdn.shopify.com/s/assets/themes_support/ga_urchin_forms-68ca1924c495cfc55dac65f4853e0c9a395387ffedc8fe58e0f2e677f95d7f23.js" defer="defer"></script>
-          <script type="text/javascript">
-
-          window.ShopifyAnalytics = window.ShopifyAnalytics || {};
-          window.ShopifyAnalytics.meta = window.ShopifyAnalytics.meta || {};
-          window.ShopifyAnalytics.meta.currency = 'USD';
-          var meta = {"product":{"id":380620504,"vendor":"Bootstrap Themes","type":"Theme","variants":[{"id":3943175813,"price":9900,"name":"Dashboard - Multiple Use","public_title":"Multiple Use","sku":""},{"id":6790245573,"price":99900,"name":"Dashboard - Extended","public_title":"Extended","sku":""}]},"page":{"pageType":"product","resourceType":"product","resourceId":380620504}};
-          for (var attr in meta) {
-            window.ShopifyAnalytics.meta[attr] = meta[attr];
-          }
-
-          </script>
-
-          <script type="text/javascript">
-            window.ShopifyAnalytics.merchantGoogleAnalytics = function() {
-
-            };
-          </script>
-
-          <script type="text/javascript" class="analytics">
-            (window.gaDevIds=window.gaDevIds||[]).push('BwiEti');
-
-
-            (function () {
-              var customDocumentWrite = function(content) {
-                var jquery = null;
-
-                if (window.jQuery) {
-                  jquery = window.jQuery;
-                } else if (window.Checkout && window.Checkout.$) {
-                  jquery = window.Checkout.$;
-                }
-
-                if (jquery) {
-                  jquery('body').append(content);
-                }
-              };
-
-              var trekkie = window.ShopifyAnalytics.lib = window.trekkie = window.trekkie || [];
-              if (trekkie.integrations) {
-                return;
-              }
-              trekkie.methods = [
-                'identify',
-                'page',
-                'ready',
-                'track',
-                'trackForm',
-                'trackLink'
-              ];
-              trekkie.factory = function(method) {
-                return function() {
-                  var args = Array.prototype.slice.call(arguments);
-                  args.unshift(method);
-                  trekkie.push(args);
-                  return trekkie;
-                };
-              };
-              for (var i = 0; i < trekkie.methods.length; i++) {
-                var key = trekkie.methods[i];
-                trekkie[key] = trekkie.factory(key);
-              }
-              trekkie.load = function(config) {
-                trekkie.config = config;
-                var script = document.createElement('script');
-                script.type = 'text/javascript';
-                script.onerror = function(e) {
-                  (new Image()).src = '//v.shopify.com/internal_errors/track?error=trekkie_load';
-                };
-                script.async = true;
-                script.src = 'https://cdn.shopify.com/s/javascripts/tricorder/trekkie.storefront.min.js?v=2017.09.05.1';
-                var first = document.getElementsByTagName('script')[0];
-                first.parentNode.insertBefore(script, first);
-              };
-              trekkie.load(
-                {"Trekkie":{"appName":"storefront","development":false,"defaultAttributes":{"shopId":6915403,"isMerchantRequest":null,"themeId":176420240,"themeCityHash":9328873788536537813}},"Performance":{"navigationTimingApiMeasurementsEnabled":true,"navigationTimingApiMeasurementsSampleRate":0.1},"Google Analytics":{"trackingId":"UA-67613229-1","domain":"auto","siteSpeedSampleRate":"10","enhancedEcommerce":true,"doubleClick":true,"includeSearch":true},"Session Attribution":{}}
-              );
-
-              var loaded = false;
-              trekkie.ready(function() {
-                if (loaded) return;
-                loaded = true;
-
-                window.ShopifyAnalytics.lib = window.trekkie;
-
-          ga('require', 'linker');
-          function addListener(element, type, callback) {
-            if (element.addEventListener) {
-              element.addEventListener(type, callback);
-            }
-            else if (element.attachEvent) {
-              element.attachEvent('on' + type, callback);
-            }
-          }
-          function decorate(event) {
-            event = event || window.event;
-            var target = event.target || event.srcElement;
-            if (target && (target.getAttribute('action') || target.getAttribute('href'))) {
-              ga(function (tracker) {
-                var linkerParam = tracker.get('linkerParam');
-                document.cookie = '_shopify_ga=' + linkerParam + '; ' + 'path=/';
-              });
-            }
-          }
-          addListener(window, 'load', function(){
-            for (var i=0; i < document.forms.length; i++) {
-              var action = document.forms[i].getAttribute('action');
-              if(action && action.indexOf('/cart') >= 0) {
-                addListener(document.forms[i], 'submit', decorate);
-              }
-            }
-            for (var i=0; i < document.links.length; i++) {
-              var href = document.links[i].getAttribute('href');
-              if(href && href.indexOf('/checkout') >= 0) {
-                addListener(document.links[i], 'click', decorate);
-              }
-            }
-          });
-
-
-                var originalDocumentWrite = document.write;
-                document.write = customDocumentWrite;
-                try { window.ShopifyAnalytics.merchantGoogleAnalytics.call(this); } catch(error) {};
-                document.write = originalDocumentWrite;
-
-
-            window.ShopifyAnalytics.lib.page(
-              null,
-              {"pageType":"product","resourceType":"product","resourceId":380620504}
-            );
-
-
-            window.ShopifyAnalytics.lib.track(
-              "Viewed Product",
-              {"variantId":3943175813,"productId":380620504,"name":"Dashboard - Multiple Use","price":"99.00","currency":"USD","sku":"","brand":"Bootstrap Themes","variant":"Multiple Use","category":"Theme","nonInteraction":true}
-            );
-
-              });
-
-
-          var eventsListenerScript = document.createElement('script');
-          eventsListenerScript.async = true;
-          eventsListenerScript.src = "//cdn.shopify.com/s/assets/shop_events_listener-4c5801cae3452eff0ededa0ac07d432c1240b78b7e11282cceb3c3213951104b.js";
-          document.getElementsByTagName('head')[0].appendChild(eventsListenerScript);
-
-            })();
-          </script>
-
-    <script id="apple-pay-shop-capabilities" type="application/json">{"shopId":6915403,"countryCode":"US","currencyCode":"USD","merchantCapabilities":["supports3DS"],"merchantId":"gid:\/\/shopify\/Shop\/6915403","merchantName":"Bootstrap Themes","requiredBillingContactFields":["postalAddress","email"],"requiredShippingContactFields":["postalAddress","email"],"shippingType":"shipping","supportedNetworks":["visa","masterCard","amex","discover"],"total":{"type":"pending","label":"Bootstrap Themes","amount":"1.00"}}</script>
-    <meta id="in-context-paypal-metadata" data-merchant-id="FJEJ84EGVPM8Y" data-environment="production" data-locale="en_US" data-redirect-url="" />
-    <script src="//cdn.shopify.com/s/assets/storefront/express_buttons-5fc9e3a0e61068f8c3a7d52556bab8ea9cbcf71ce779e3848ca11d6651e1fbe5.js" defer="defer" crossorigin="anonymous" integrity="sha256-X8njoOYQaPjDp9UlVrq46py89xzneeOEjKEdZlHh++U="></script><script>
-    //<![CDATA[
-          window.Shopify = window.Shopify || {};
-          window.Shopify.Checkout = window.Shopify.Checkout || {};
-          window.Shopify.Checkout.apiHost = "strapping-io.myshopify.com";
-          window.Shopify.Checkout.rememberMeHost = "pay.shopify.com";
-          window.Shopify.Checkout.rememberMeAccessToken = "aHZKd29qMllIWVJXWE1JaDUzVkY3TTlxOTVyZ095UWErWExDWW9aYWVPVTc2Sm5QOUZ1c0JvWFRTS2VqdUE3Vy0telg5V21LaktiTjVQUW95dGFDVU8rUT09--afa499044ca14a149e4790d1ddd1f63d576af8b7";
-
-    //]]>
-    </script>
-    <script>
-    //<![CDATA[
-    window.ShopifyPaypalV4VisibilityTracking = true;
-    //]]>
     </script>
 
-    <style media="all">.additional-checkout-button{border:0 !important;border-radius:5px !important;display:inline-block;margin:0 0 10px;padding:0 24px !important;max-width:100%;min-width:150px !important;line-height:44px !important;text-align:center !important}.additional-checkout-button+.additional-checkout-button{margin-left:10px}.additional-checkout-button:last-child{margin-bottom:0}.additional-checkout-button span{font-size:14px !important}.additional-checkout-button img{display:inline-block !important;height:1.3em !important;margin:0 !important;vertical-align:middle !important;width:auto !important}@media (max-width: 500px){.additional-checkout-button{display:block;margin-left:0 !important;padding:0 10px !important;width:100%}}.additional-checkout-button--apple-pay{background-color:#000 !important;color:#fff !important;display:none;font-family:-apple-system, &#39;Helvetica Neue&#39;, sans-serif !important;min-width:150px !important;white-space:nowrap !important}.additional-checkout-button--apple-pay:hover,.additional-checkout-button--apple-pay:active,.additional-checkout-button--apple-pay:visited{color:#fff !important;text-decoration:none !important}.additional-checkout-button--apple-pay .additional-checkout-button__logo{background:-webkit-named-image(apple-pay-logo-white) center center no-repeat !important;background-size:auto 100% !important;display:inline-block !important;vertical-align:middle !important;width:3em !important;height:1.3em !important}@media (max-width: 500px){.additional-checkout-button--apple-pay{display:none}}.additional-checkout-button--paypal-express{background-color:#ffc439 !important}.additional-checkout-button--amazon{background-color:#fad676 !important;position:relative !important}.additional-checkout-button--amazon .additional-checkout-button__logo{-webkit-transform:translateY(4px) !important;transform:translateY(4px) !important}.additional-checkout-button--amazon .alt-payment-list-amazon-button-image{max-height:none !important;opacity:0 !important;position:absolute !important;top:0 !important;left:0 !important;width:100% !important;height:100% !important}.additional-checkout-button-visually-hidden{border:0 !important;clip:rect(0, 0, 0, 0) !important;clip:rect(0 0 0 0) !important;width:1px !important;height:1px !important;margin:-2px !important;overflow:hidden !important;padding:0 !important;position:absolute !important}
-    </style>
-    </head>
-
-    <body id="dashboard" class="background-dark template-product" >
 
 
+      </head>
+      <body>
 
-    <iframe class="iframe-preview js-iframe" src="//bootstrap-themes.github.io/dashboard"></iframe>
+      	<!-- NAVIGATION MENU -->
 
-    <div id="detailsContainer" class="product-details collapse">
-
-      <button type="button" class="close" aria-label="Close" data-toggle="collapse" data-target="#detailsContainer">
-        <span aria-hidden="true">&times;</span>
-      </button>
-
-      <div class="container">
-        <div class="row text-centered">
-          <div class="col-md-12 text-center">
-            <h2>Designed to be the perfect starting point for any dashboard or admin site. Charts, graphs, sortable tables, and more than a dozen other new components included.</h2>
-
-            <div class="product-details-spacer">
-              <a href="/checkout" class="btn m-b" id="buy-2" data-action="buy" data-product-id="3943175813">
-                Buy $99
-              </a>
-              <br>
-              <div class="popup text-muted visible-md-inline-block visible-lg-inline-block">License:
-                <button class="link" data-popup="#pop-2">
-                  <span class="popup-link-text">Multiple Use</span> <span class="caret up"></span>
-                </button>
-
-                <div class="popover top popup-items" id="pop-2">
-                  <div class="arrow"></div>
-                  <button class="popup-item" data-popup-btn="#buy-2" data-popup-text="Multiple Use" data-popup-price="$99" data-popup-product-id="3943175813">
-                    <h5 class="m-y-0 popup-item-price">$99</h5>
-                    <h5 class="m-y-0 text-dark">Multiple Use License</h5>
-                    <p>Perfect for most needs</p>
-                    <ul class="list-unstyled">
-                      <li><span class="icon icon-check"></span> Use for unlimited projects</li>
-                      <li><span class="icon icon-check"></span> Use for you and your clients</li>
-                    </ul>
-                    <p>Read the full <a href="/pages/our-license" target="blank">Multiple Use License</a></p>
-                  </button>
-                  <button class="popup-item" data-popup-btn="#buy-2" data-popup-text="Extended" data-popup-price="$999" data-popup-product-id="6790245573">
-                    <h5 class="m-y-0 popup-item-price">$999</h5>
-                    <h5 class="m-y-0 text-dark">Extended License</h5>
-                    <p>Redistribution and Resale</p>
-                    <ul class="list-unstyled">
-                      <li><span class="icon icon-check"></span> Use for unlimited projects</li>
-                      <li><span class="icon icon-check"></span> Use for you and your clients</li>
-                      <li><span class="icon icon-check"></span> Redistribute and resell</li>
-                    </ul>
-                    <p>Read the full <a href="/pages/our-license" target="blank">Extended License</a></p>
-                  </button>
-                </div>
-              </div>
+        <div class="navbar-nav navbar-inverse navbar-fixed-top">
+            <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="assets/img/logo30.png" alt=""> BLOCKS Dashboard</a>
             </div>
-          </div>
+              <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                  <li class="active"><a href="index.html"><i class="icon-home icon-white"></i> Home</a></li>
+                  <li><a href="manager.html"><i class="icon-folder-open icon-white"></i> File Manager</a></li>
+                  <li><a href="calendar.html"><i class="icon-calendar icon-white"></i> Calendar</a></li>
+                  <li><a href="tables.html"><i class="icon-th icon-white"></i> Tables</a></li>
+                  <li><a href="login.html"><i class="icon-lock icon-white"></i> Login</a></li>
+                  <li><a href="user.html"><i class="icon-user icon-white"></i> User</a></li>
+
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
         </div>
 
-        <div class="row product-detail-trifecta">
-          <div class="col-md-4 text-center">
-            <h5>Browser Support</h5>
-            <p>Our themes support all major modern browsers (refer to our <a target="_blank" href="/pages/faq">FAQ</a> for more info).</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <h5>License</h5>
-            <p>We have two simple licenses, read about them to decide which is right for you.</p>
-          </div>
-          <div class="col-md-4 text-center">
-            <h5>Documentation</h5>
-            <p>Each theme includes <a href="#" data-toggle="collapse" data-target="#detailsContainer" data-action="navigate-to-docs" data-action-value="https://bootstrap-themes.github.io/dashboard/docs">docs for new components</a>, just like Bootstrap would.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+        <div class="container">
 
-    <nav class="navbar navbar-default navbar-fixed-bottom swag-line swag-line-bottom" role="navigation">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="/">Bootstrap Themes</a>
-      </div>
-      <ul class="nav navbar-nav">
-        <li class="dropdown">
-          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-            <small class="text-muted">Theme</small>
-            <div>Dashboard</div>
-            <span class="caret up"></span>
-          </a>
-          <ul class="dropdown-menu" role="menu">
+    	  <!-- FIRST ROW OF BLOCKS -->
+          <div class="row">
 
+          <!-- USER PROFILE BLOCK -->
+            <div class="col-sm-3 col-lg-3">
+          		<div class="dash-unit">
+    	      		<dtitle>User Profile</dtitle>
+    	      		<hr>
+    				<div class="thumbnail">
+    					<img src="assets/img/face80x80.jpg" alt="Marcel Newman" class="img-circle">
+    				</div><!-- /thumbnail -->
+    				<h1>Marcel Newman</h1>
+    				<h3>Madrid, Spain</h3>
+    				<br>
+    					<div class="info-user">
+    						<span aria-hidden="true" class="li_user fs1"></span>
+    						<span aria-hidden="true" class="li_settings fs1"></span>
+    						<span aria-hidden="true" class="li_mail fs1"></span>
+    						<span aria-hidden="true" class="li_key fs1"></span>
+    					</div>
+    				</div>
+            </div>
 
+          <!-- DONUT CHART BLOCK -->
+            <div class="col-sm-3 col-lg-3">
+          		<div class="dash-unit">
+    		  		<dtitle>Site Bandwidth</dtitle>
+    		  		<hr>
+    	        	<div id="load"></div>
+    	        	<h2>45%</h2>
+    			</div>
+            </div>
 
+          <!-- DONUT CHART BLOCK -->
+            <div class="col-sm-3 col-lg-3">
+          		<div class="dash-unit">
+    		  		<dtitle>Disk Space</dtitle>
+    		  		<hr>
+    	        	<div id="space"></div>
+    	        	<h2>65%</h2>
+    			</div>
+            </div>
 
+            <div class="col-sm-3 col-lg-3">
 
-                  <li><a href="/products/application">Application</a></li>
+          <!-- LOCAL TIME BLOCK -->
+          		<div class="half-unit">
+    	      		<dtitle>Local Time</dtitle>
+    	      		<hr>
+    		      		<div class="clockcenter">
+    			      		<digiclock>12:45:25</digiclock>
+    		      		</div>
+    			</div>
 
-                  <li><a href="/products/dashboard">Dashboard</a></li>
+          <!-- SERVER UPTIME -->
+    			<div class="half-unit">
+    	      		<dtitle>Server Uptime</dtitle>
+    	      		<hr>
+    	      		<div class="cont">
+    					<p><img src="assets/img/up.png" alt=""> <bold>Up</bold> | 356ms.</p>
+    				</div>
+    			</div>
 
-                  <li><a href="/products/marketing">Marketing</a></li>
-
-
-
-          </ul>
-        </li>
-
-
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-              <small class="text-muted">Style</small>
-              <div class="js-styleDropdown">
-                Dark
-              </div>
-              <span class="caret up"></span>
-            </a>
-            <ul class="dropdown-menu" role="menu">
-
-                <li>
-                  <a href="#" data-product="dashboard" data-style="index">
-                    Dark
-                  </a>
-                </li>
-
-                <li>
-                  <a href="#" data-product="dashboard" data-style="index-light">
-                    Light
-                  </a>
-                </li>
-
-            </ul>
-          </li>
-
-        <li>
-          <button class="navbar-btn btn btn-icon btn-borderless btn-active js-desktopBtn" data-action="toggle-preview-size" data-action-value="desktop">
-            <img src="//cdn.shopify.com/s/files/1/0691/5403/t/141/assets/desktop.svg?16007593649882510692" alt="desktop">
-          </button>
-          <button class="navbar-btn btn btn-icon btn-borderless js-phoneBtn" data-action="toggle-preview-size" data-action-value="phone">
-            <img src="//cdn.shopify.com/s/files/1/0691/5403/t/141/assets/phone.svg?16007593649882510692" alt="phone">
-          </button>
-        </li>
-      </ul>
-
-      <div class="navbar-right navbar-form">
-
-        <div class="popup text-muted visible-md-inline-block visible-lg-inline-block">License:
-
-          <button class="link" data-popup="#pop-1">
-            <span class="popup-link-text">Multiple Use</span> <span class="caret up"></span>
-          </button>
-
-          <div class="popover top popup-items" id="pop-1">
-            <div class="arrow"></div>
-            <button class="popup-item" data-popup-btn="#buy-1" data-popup-text="Multiple Use" data-popup-price="$99" data-popup-product-id="3943175813">
-              <h5 class="m-y-0 popup-item-price">$99</h5>
-              <h5 class="m-y-0 text-dark">Multiple Use License</h5>
-              <p>Perfect for most needs</p>
-              <ul class="list-unstyled">
-                <li><span class="icon icon-check"></span> Use for unlimited projects</li>
-                <li><span class="icon icon-check"></span> Use for you and your clients</li>
-              </ul>
-              <p>Read the full <a href="/pages/our-license" target="blank">Multiple Use License</a></p>
-            </button>
-            <button class="popup-item" data-popup-btn="#buy-1" data-popup-text="Extended" data-popup-price="$999" data-popup-product-id="6790245573">
-              <h5 class="m-y-0 popup-item-price">$999</h5>
-              <h5 class="m-y-0 text-dark">Extended License</h5>
-              <p>Redistribution and Resale</p>
-              <ul class="list-unstyled">
-                <li><span class="icon icon-check"></span> Use for unlimited projects</li>
-                <li><span class="icon icon-check"></span> Use for you and your clients</li>
-                <li><span class="icon icon-check"></span> Redistribute and resell</li>
-              </ul>
-              <p>Read the full <a href="/pages/our-license" target="blank">Extended License</a></p>
-            </button>
-          </div>
-        </div>
-
-        <a href="/checkout" class="btn" id="buy-1" data-action="buy" data-product-id="3943175813">
-          Buy $99
-        </a>
-        <button class="btn" data-toggle="collapse" data-target="#detailsContainer">
-          Details
-        </button>
-        <a href="/" class="close"><span aria-hidden="true">&times;</span><span class="sr-only">Bootstrap Themes</span></a>
-      </div>
-    </nav>
+            </div>
+          </div><!-- /row -->
 
 
-      <!-- General JavaScript -->
-      <!-- jquery.js -->
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js" type="text/javascript"></script>
+    	  <!-- SECOND ROW OF BLOCKS -->
+          <div class="row">
+            <div class="col-sm-3 col-lg-3">
+           <!-- MAIL BLOCK -->
+          		<div class="dash-unit">
+          		<dtitle>Inbox (1)</dtitle>
+          		<hr>
+          		<div class="framemail">
+        			<div class="window">
+    			        <ul class="mail">
+    			            <li>
+    			                <i class="unread"></i>
+    			                <img class="avatar" src="assets/img/photo01.jpeg" alt="avatar">
+    			                <p class="sender">Adam W.</p>
+    			                <p class="message"><strong>Working</strong> - This is the last...</p>
+    			                <div class="actions">
+    			                    <a><img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply"></a>
+    			                    <a><img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/star_fav.png" alt="favourite"></a>
+    			                    <a><img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/tag.png" alt="label"></a>
+    			                    <a><img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete"></a>
+    			                </div>
+    			            </li>
+    			            <li>
+    			                <i class="read"></i>
+    			                <img class="avatar" src="assets/img/photo02.jpg" alt="avatar">
+    			                <p class="sender">Dan E.</p>
+    			                <p class="message"><strong>Hey man!</strong> - You have to taste ...</p>
+    			                <div class="actions">
+    			                    <a><img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply"></a>
+    			                    <a><img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/star_fav.png" alt="favourite"></a>
+    			                    <a><img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/tag.png" alt="label"></a>
+    			                    <a><img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete"></a>
+    			                </div>
+    			            </li>
+    			            <li>
+    			                <i class="read"></i>
+    			                <img class="avatar" src="assets/img/photo03.jpg" alt="avatar">
+    			                <p class="sender">Leonard N.</p>
+    			                <p class="message"><strong>New Mac :D</strong> - So happy with ...</p>
+    			                <div class="actions">
+    			                    <a><img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply"></a>
+    			                    <a><img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/star_fav.png" alt="favourite"></a>
+    			                    <a><img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/tag.png" alt="label"></a>
+    			                    <a><img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete"></a>
+    			                </div>
+    			            </li>
+    			            <li>
+    			                <i class="read"></i>
+    			                <img class="avatar" src="assets/img/photo04.jpg" alt="avatar">
+    			                <p class="sender">Peter B.</p>
+    			                <p class="message"><strong>Thank you</strong> - Finally I can ...</p>
+    			                <div class="actions">
+    			                    <a><img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/undo.png" alt="reply"></a>
+    			                    <a><img src="http://png-1.findicons.com/files//icons/2232/wireframe_mono/16/star_fav.png" alt="favourite"></a>
+    			                    <a><img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/tag.png" alt="label"></a>
+    			                    <a><img src="http://png-4.findicons.com/files//icons/2232/wireframe_mono/16/trash.png" alt="delete"></a>
+    			                </div>
+    			            </li>
+    			        </ul>
+        			</div>
+    			</div>
+    		</div><!-- /dash-unit -->
+        </div><!-- /span3 -->
 
-    <!-- bootstrap.js -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js" type="text/javascript"></script>
+    	  <!-- GRAPH CHART - lineandbars.js file -->
+            <div class="col-sm-3 col-lg-3">
+          		<div class="dash-unit">
+          		<dtitle>Other Information</dtitle>
+          		<hr>
+    			    <div class="section-graph">
+    			      <div id="importantchart"></div>
+    			      <br>
+    			      <div class="graph-info">
+    			        <i class="graph-arrow"></i>
+    			        <span class="graph-info-big">634.39</span>
+    			        <span class="graph-info-small">+2.18 (3.71%)</span>
+    			      </div>
+    			    </div>
+    			</div>
+            </div>
 
-    <script>
-      $('html').removeClass('no-js').addClass('js')
-    </script>
+    	  <!-- LAST MONTH REVENUE -->
+            <div class="col-sm-3 col-lg-3">
+          		<div class="dash-unit">
+    	      		<dtitle>Last Month Revenue</dtitle>
+    	      		<hr>
+    	      		<div class="cont">
+    					<p><bold>$879</bold> | <ok>Approved</ok></p>
+    					<br>
+    					<p><bold>$377</bold> | Pending</p>
+    					<br>
+    					<p><bold>$156</bold> | <bad>Denied</bad></p>
+    					<br>
+    					<p><img src="assets/img/up-small.png" alt=""> 12% Compared Last Month</p>
 
-    <!-- Our main app.js -->
-    <script src="//cdn.shopify.com/s/files/1/0691/5403/t/141/assets/app.js?16007593649882510692" type="text/javascript"></script>
+    				</div>
 
-    <!-- Async Script for Twitter Widgets -->
-    <script>window.twttr = (function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0],
-        t = window.twttr || {};
-      if (d.getElementById(id)) return;
-      js = d.createElement(s);
-      js.id = id;
-      js.src = "https://platform.twitter.com/widgets.js";
-      fjs.parentNode.insertBefore(js, fjs);
+    			</div>
+            </div>
 
-      t._e = [];
-      t.ready = function(f) {
-        t._e.push(f);
-      };
+    	  <!-- 30 DAYS STATS - CAROUSEL FLEXSLIDER -->
+            <div class="col-sm-3 col-lg-3">
+          		<div class="dash-unit">
+    	      		<dtitle>Last 30 Days Stats</dtitle>
+    	      		<hr>
+    	      		<br>
+    	      		<br>
+    	            <div class="flexslider">
+    					<ul class="slides">
+    						<li><img src="assets/img/slide01.png" alt="slider"></li>
+    						<li><img src="assets/img/slide02.png" alt="slider"></li>
+    					</ul>
+                </div>
+    				<div class="cont">
+    					<p>StatCounter Information</p>
+    				</div>
+    			</div>
+            </div>
+          </div><!-- /row -->
 
-      return t;
-    }(document, "script", "twitter-wjs"));</script>
 
-    </body>
-    </html>
+    	  <!-- THIRD ROW OF BLOCKS -->
+          <div class="row">
+          	<div class="col-sm-3 col-lg-3">
 
+    	  <!-- BARS CHART - lineandbars.js file -->
+          		<div class="half-unit">
+    	      		<dtitle>Stock Information</dtitle>
+    	      		<hr>
+    	      		<div class="cont">
+    	      		 <div class="info-aapl">
+    			        <h4>AAPL</h4>
+    			        <ul>
+    			          <li><span class="orange" style="height: 37.5%"></span></li>
+    			          <li><span class="orange" style="height: 47.5%"></span></li>
+    			          <li><span class="orange" style="height: 70%"></span></li>
+    			          <li><span class="orange" style="height: 85%"></span></li>
+    			          <li><span class="green" style="height: 75%"></span></li>
+    			          <li><span class="green" style="height: 50%"></span></li>
+    			          <li><span class="green" style="height: 15%"></span></li>
+    			        </ul>
+    			      </div>
+    			      </div>
+          		</div>
+
+    	  <!-- TO DO LIST -->
+          		<div class="half-unit">
+    	      		<dtitle>To Do List</dtitle>
+    	      		<hr>
+    	      		<div class="cont">
+    					<p><bold>13</bold> | Pending Tasks</p>
+    				</div>
+    		             <div class="progress">
+    				        <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;"><span class="sr-only">60% Complete</span>
+
+    				        </div>
+    				     </div>
+          		</div>
+          	</div>
+
+          	<div class="col-sm-3 col-lg-3">
+
+    	  <!-- LIVE VISITORS BLOCK -->
+          		<div class="half-unit">
+    	      		<dtitle>Live Visitors</dtitle>
+    	      		<hr>
+    	      		<div class="cont">
+          			<p><bold>388</bold></p>
+          			<p><img src="assets/img/up-small.png" alt=""> 412 Max. | <img src="assets/img/down-small.png" alt=""> 89 Min.</p>
+    	      		</div>
+          		</div>
+
+    	  <!-- PAGE VIEWS BLOCK -->
+          		<div class="half-unit">
+    	      		<dtitle>Page Views</dtitle>
+    	      		<hr>
+    	      		<div class="cont">
+          			<p><bold>145.0K</bold></p>
+          			<p><img src="assets/img/up-small.png" alt=""> 23.88%</p>
+    	      		</div>
+          		</div>
+          	</div>
+
+          	<div class="col-sm-3 col-lg-3">
+    	  <!-- TOTAL SUBSCRIBERS BLOCK -->
+          		<div class="half-unit">
+    	      		<dtitle>Total Subscribers</dtitle>
+    	      		<hr>
+    	      		<div class="cont">
+          			<p><bold>14.744</bold></p>
+          			<p>98 Subscribed Today</p>
+    	      		</div>
+          		</div>
+
+    	  <!-- FOLLOWERS BLOCK -->
+          		<div class="half-unit">
+    	      		<dtitle>Twitter Followers</dtitle>
+    	      		<hr>
+    	      		<div class="cont">
+          			<p><bold>17.833 Followers</bold></p>
+          			<p>@SomeUser</p>
+    	      		</div>
+          		</div>
+          	</div>
+
+    	  <!-- LATEST NEWS BLOCK -->
+          	<div class="col-sm-3 col-lg-3">
+          		<div class="dash-unit">
+    	      		<dtitle>Latest News</dtitle>
+    	      		<hr>
+    				<div class="info-user">
+    					<span aria-hidden="true" class="li_news fs2"></span>
+    				</div>
+    				<br>
+          			<div class="text">
+          				<p><b>Alvarez.is:</b> A beautiful new Dashboard theme has been realised by Carlos Alvarez. Please, visit <a href="http://alvarez.is">Alvarez.is</a> for more details.</p>
+          				<p><grey>Last Update: 5 minutes ago.</grey></p>
+          			</div>
+          		</div>
+          	</div>
+          </div><!-- /row -->
+
+    	  <!-- FOURTH ROW OF BLOCKS -->
+    	<div class="row">
+
+    	  <!-- TWITTER WIDGET BLOCK -->
+    		<div class="col-sm-3 col-lg-3">
+    			<div class="dash-unit">
+    	      		<dtitle>Twitter Widget</dtitle>
+    	      		<hr>
+    				<div class="info-user">
+    					<span aria-hidden="true" class="li_megaphone fs2"></span>
+    				</div>
+    				<br>
+    		 		<div id="jstwitter" class="clearfix">
+    					<ul id="twitter_update_list"></ul>
+    				</div>
+    				<script src="http://twitter.com/javascripts/blogger.js"></script><!-- Script Needed to load the Tweets -->
+    				<script src="http://api.twitter.com/1/statuses/user_timeline/wrapbootstrap.json?callback=twitterCallback2&amp;count=1"></script>
+    				<!-- To show your tweets replace "wrapbootstrap", in the line above, with your user. -->
+    				<div class="text">
+    				<p><grey>Show your tweets here!</grey></p>
+    				</div>
+    			</div>
+    		</div>
+
+    	  <!-- NOTIFICATIONS BLOCK -->
+    		<div class="col-sm-3 col-lg-3">
+    			<div class="dash-unit">
+    	      		<dtitle>Notifications</dtitle>
+    	      		<hr>
+    	      		<div class="info-user">
+    					<span aria-hidden="true" class="li_bubble fs2"></span>
+    				</div>
+    	      		<div class="cont">
+    	      			<p><button class="btnnew noty" data-noty-options="{&quot;text&quot;:&quot;This is a success notification&quot;,&quot;layout&quot;:&quot;topRight&quot;,&quot;type&quot;:&quot;success&quot;}">Top Right</button></p>
+    	      			<p><button class="btnnew noty" data-noty-options="{&quot;text&quot;:&quot;This is an informaton notification&quot;,&quot;layout&quot;:&quot;topLeft&quot;,&quot;type&quot;:&quot;information&quot;}">Top Left</button></p>
+    	      			<p><button class="btnnew noty" data-noty-options="{&quot;text&quot;:&quot;This is an alert notification with fade effect.&quot;,&quot;layout&quot;:&quot;topCenter&quot;,&quot;type&quot;:&quot;alert&quot;,&quot;animateOpen&quot;: {&quot;opacity&quot;: &quot;show&quot;}}">Top Center (fade)</button></p>
+    	      		</div>
+    			</div>
+    		</div>
+
+    	  <!-- SWITCHES BLOCK -->
+    		<div class="col-sm-3 col-lg-3">
+    			<div class="dash-unit">
+    	      		<dtitle>Switches</dtitle>
+    	      		<hr>
+    	      		<div class="info-user">
+    					<span aria-hidden="true" class="li_params fs2"></span>
+    				</div>
+    				<br>
+    				<div class="switch">
+    					<input type="radio" class="switch-input" name="view" value="on" id="on" checked="">
+    					<label for="on" class="switch-label switch-label-off">On</label>
+    					<input type="radio" class="switch-input" name="view" value="off" id="off">
+    					<label for="off" class="switch-label switch-label-on">Off</label>
+    					<span class="switch-selection"></span>
+    				</div>
+    				<div class="switch switch-blue">
+    					<input type="radio" class="switch-input" name="view2" value="week2" id="week2" checked="">
+    					<label for="week2" class="switch-label switch-label-off">Week</label>
+    					<input type="radio" class="switch-input" name="view2" value="month2" id="month2">
+    					<label for="month2" class="switch-label switch-label-on">Month</label>
+    					<span class="switch-selection"></span>
+    				</div>
+
+    				<div class="switch switch-yellow">
+    					<input type="radio" class="switch-input" name="view3" value="yes" id="yes" checked="">
+    					<label for="yes" class="switch-label switch-label-off">Yes</label>
+    					<input type="radio" class="switch-input" name="view3" value="no" id="no">
+    					<label for="no" class="switch-label switch-label-on">No</label>
+    					<span class="switch-selection"></span>
+    				</div>
+    			</div>
+    		</div>
+
+    	  <!-- GAUGE CHART BLOCK -->
+    		<div class="col-sm-3 col-lg-3">
+    			<div class="dash-unit">
+    	      		<dtitle>Gauge Chart</dtitle>
+    	      		<hr>
+    	      		<div class="info-user">
+    					<span aria-hidden="true" class="li_lab fs2"></span>
+    				</div>
+    				<canvas id="canvas" width="300" height="300">
+    			</canvas></div>
+    		</div>
+
+    	</div><!--/row -->
+
+     	  <!-- FOURTH ROW OF BLOCKS -->
+    		<div class="row">
+
+     	  <!-- ACCORDION BLOCK -->
+    			<div class="col-sm-3 col-lg-3">
+    				<div class="dash-unit">
+    	      		<dtitle>Accordion</dtitle>
+    	      		<hr>
+    					<div class="accordion" id="accordion2">
+    		                <div class="accordion-group">
+    		                    <div class="accordion-heading">
+    		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">
+    		                        Collapsible Group Item #1
+    		                        </a>
+    		                    </div>
+    		                    <div id="collapseOne" class="accordion-body collapse in">
+    		                        <div class="accordion-inner">
+    								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem.
+    								</div>
+    		                    </div>
+    		                </div>
+
+    		                <div class="accordion-group">
+    		                    <div class="accordion-heading">
+    		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">
+    		                        Collapsible Group Item #2
+    		                        </a>
+    		                    </div>
+    		                    <div id="collapseTwo" class="accordion-body collapse">
+    		                        <div class="accordion-inner">
+    								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem.
+    								</div>
+    		                    </div>
+    		                </div>
+
+    		                 <div class="accordion-group">
+    		                    <div class="accordion-heading">
+    		                        <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseThree">
+    		                        Collapsible Group Item #3
+    		                        </a>
+    		                    </div>
+    		                    <div id="collapseThree" class="accordion-body collapse">
+    		                        <div class="accordion-inner">
+    								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla iaculis mattis lorem.
+    		                        </div>
+    		                    </div>
+    		                </div>
+    		            </div><!--/accordion -->
+    				</div>
+    			</div>
+
+    			<div class="col-sm-3 col-lg-3">
+
+     	  		<!-- LAST USER BLOCK -->
+    				<div class="half-unit">
+    	      		<dtitle>Last Registered User</dtitle>
+    	      		<hr>
+    	      			<div class="cont2">
+    	      				<img src="assets/img/user-avatar.jpg" alt="">
+    	      				<br>
+    	      				<br>
+    	      				<p>Paul Smith</p>
+    	      				<p><bold>Liverpool, England</bold></p>
+    	      			</div>
+    				</div>
+
+     	  		<!-- MODAL BLOCK -->
+    				<div class="half-unit">
+    	      		<dtitle>Modal</dtitle>
+    	      		<hr>
+    		            <div class="cont">
+    		                <a href="#myModal" role="button" class="btnnew" data-toggle="modal">Example Modal Window</a>
+    		            </div>
+    				</div>
+    			</div>
+    			<!-- Modal -->
+    			  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    			    <div class="modal-dialog">
+    			      <div class="modal-content">
+    			        <div class="modal-header">
+    			          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+    			          <h4 class="modal-title">Modal title</h4>
+    			        </div>
+    			        <div class="modal-body">
+    			          ...
+    			        </div>
+    			        <div class="modal-footer">
+    			          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+    			          <button type="button" class="btn btn-primary">Save changes</button>
+    			        </div>
+    			      </div><!-- /.modal-content -->
+    			    </div><!-- /.modal-dialog -->
+    			  </div><!-- /.modal -->
+     	  		<!-- FAST CONTACT BLOCK -->
+    			<div class="col-sm-3 col-lg-3">
+    				<div class="dash-unit">
+    	      		<dtitle>Fast Contact</dtitle>
+    	      		<hr>
+    	      		<div class="cont">
+                    	<form action="#get-in-touch" method="POST" id="contact">
+                        	<input type="text" id="contactname" name="contactname" placeholder="Name">
+                        	<input type="text" id="email" name="email" placeholder="Email">
+                        	<div class="textarea-container"><textarea id="message" name="message" placeholder="Message"></textarea></div>
+                        	<input type="submit" id="submit" name="submit" value="Send">
+                        </form>
+    				</div>
+    				</div>
+    			</div>
+
+     	  		<!-- INFORMATION BLOCK -->
+    			<div class="col-sm-3 col-lg-3">
+    				<div class="dash-unit">
+    	      		<dtitle>Block Dashboard</dtitle>
+    	      		<hr>
+    	      		<div class="info-user">
+    					<span aria-hidden="true" class="li_display fs2"></span>
+    				</div>
+    				<br>
+    				<div class="text">
+    				<p>Block Dashboard created by Basicoh.</p>
+    				<p>Special Thanks to Highcharts, Linecons and Bootstrap for their amazing tools.</p>
+    				</div>
+
+    				</div>
+    			</div>
+
+    		</div><!--/row -->
+
+
+
+    	</div> <!-- /container -->
+    	<div id="footerwrap">
+          	<footer class="clearfix"></footer>
+          	<div class="container">
+          		<div class="row">
+          			<div class="col-sm-12 col-lg-12">
+          			<p><img src="assets/img/logo.png" alt=""></p>
+          			<p>Blocks Dashboard Theme - Crafted With Love - Copyright 2013</p>
+          			</div>
+
+          		</div><!-- /row -->
+          	</div><!-- /container -->
+    	</div><!-- /footerwrap -->
+
+
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script type="text/javascript" src="assets/js/bootstrap.js"></script>
+    	<script type="text/javascript" src="assets/js/lineandbars.js"></script>
+
+    	<script type="text/javascript" src="assets/js/dash-charts.js"></script>
+    	<script type="text/javascript" src="assets/js/gauge.js"></script>
+
+    	<!-- NOTY JAVASCRIPT -->
+    	<script type="text/javascript" src="assets/js/noty/jquery.noty.js"></script>
+    	<script type="text/javascript" src="assets/js/noty/layouts/top.js"></script>
+    	<script type="text/javascript" src="assets/js/noty/layouts/topLeft.js"></script>
+    	<script type="text/javascript" src="assets/js/noty/layouts/topRight.js"></script>
+    	<script type="text/javascript" src="assets/js/noty/layouts/topCenter.js"></script>
+
+    	<!-- You can add more layouts if you want -->
+    	<script type="text/javascript" src="assets/js/noty/themes/default.js"></script>
+        <!-- <script type="text/javascript" src="assets/js/dash-noty.js"></script> This is a Noty bubble when you init the theme-->
+    	<script type="text/javascript" src="http://code.highcharts.com/highcharts.js"></script>
+    	<script src="assets/js/jquery.flexslider.js" type="text/javascript"></script>
+
+        <script type="text/javascript" src="assets/js/admin.js"></script>
+
+    </body></html>
 </html>

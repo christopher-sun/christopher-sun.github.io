@@ -2,6 +2,25 @@
 <head>
     <link rel="stylesheet" type="text/css" href="site.css" media="screen"/>
 </head>
-<h1 class="rainbow-text" style="text-align:center;">hell yeah he is</h1> <h1 style="text-align:center;">&#128526;</p>
+<script>
+window.addEventListener("load", function() {
+  var elements = document.getElementsByClassName("rainbowText");
+  for (let i = 0; i < elements.length; i++) {
+    generateRainbowText(elements[i]);
+  }
+});
+
+function generateRainbowText(element) {
+  var text = element.innerText;
+  element.innerHTML = "";
+  for (let i = 0; i < text.length; i++) {
+    let charElem = document.createElement("span");
+    charElem.style.color = "hsl(" + (360 * i / text.length) + ",80%,50%)";
+    charElem.innerHTML = text[i];
+    element.appendChild(charElem);
+  }
+}
+</script>
+<h1 class="rainbowText" style="text-align:center;">hell yeah he is</h1> <h1 style="text-align:center;">&#128526;</p>
 <img src="chrisgay.jpg" alt="indeed chris is gay -- chris holding a fan" class="center">
 </html>
